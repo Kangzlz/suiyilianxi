@@ -9,7 +9,7 @@ int scan_pint(void)
         scanf("%d",&tmp);
 
         if(tmp<=0)
-        printf("\a请不要输入非正整数。");
+        printf("\a请不要输入非正整数。\n");
     }while(tmp<=0);
 
     return tmp;
@@ -20,8 +20,8 @@ int rev_int(int num)
 
     if(num>0){
         do{
-            tmp=num*10+num%10;
-            num/10;
+            tmp=tmp*10+num%10;
+            num/=10;
         }while(num>0);
     }
     return tmp;
