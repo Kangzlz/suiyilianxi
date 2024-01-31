@@ -1,7 +1,7 @@
 /*用字幕显示名字（其二：从左往右滚动字符）*/
 #include<stdio.h>
 #include<time.h>
-#include<stdlib.h>
+#include<string.h>
 int sleep(unsigned long x)
 {
     clock_t c1=clock(),c2;
