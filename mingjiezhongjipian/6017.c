@@ -83,7 +83,7 @@ int main(int argc,char *argv[])
     if(argc>=2){
         m=get_month(argv[1]);
         if(m<0||m>12){
-            sprintf(stderr,"月份的值不正确。\n");
+            fprintf(stderr,"月份的值不正确。\n");
             return 1;
         }
     }
